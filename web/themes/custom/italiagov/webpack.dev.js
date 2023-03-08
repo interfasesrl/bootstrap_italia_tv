@@ -25,6 +25,10 @@ module.exports = merge(common, {
           { loader: 'sass-loader', options: { sourceMap: true } },
         ],
       },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
+      }
     ],
   },
 })

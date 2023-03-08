@@ -30,6 +30,10 @@ module.exports = merge(common, {
           'sass-loader',
         ],
       },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
+      }
     ],
   },
   optimization: {
