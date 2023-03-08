@@ -1,0 +1,25 @@
+uuid: 6dd08ea4-a346-4e9d-8a08-217338bc3118
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accordion_background_activ
+    - paragraphs.paragraphs_type.accordion
+_core:
+  default_config_hash: QUoK9ZAyx9snbB7KR_VLyTydgqH-JJ1dh1HonnDL4NA
+id: paragraph.accordion.field_accordion_background_activ
+field_name: field_accordion_background_activ
+entity_type: paragraph
+bundle: accordion
+label: 'Accordion background active'
+description: 'Adds the primary background to the active element'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

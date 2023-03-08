@@ -1,0 +1,48 @@
+uuid: 0bfd9b08-0c09-4b2b-9ce2-6a4099441d06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_settings
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.settings
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: Mr6fq61Objwy9pQPuiieMsE2_3gSj7p-lOfXcFEgEUk
+id: paragraph.carousel.field_settings
+field_name: field_settings
+entity_type: paragraph
+bundle: carousel
+label: Settings
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      settings: settings
+    target_bundles_drag_drop:
+      carousel:
+        weight: 7
+        enabled: false
+      content:
+        weight: 8
+        enabled: false
+      gallery:
+        weight: 9
+        enabled: false
+      settings:
+        enabled: true
+        weight: 10
+      slide:
+        weight: 11
+        enabled: false
+      slideshow:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

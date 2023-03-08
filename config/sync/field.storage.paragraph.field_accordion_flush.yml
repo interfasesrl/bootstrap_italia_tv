@@ -1,0 +1,20 @@
+uuid: a2310fea-a4e4-403f-82bd-6a072d7632bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: JhRMz9VHTjW_feh6gKY8jh63XTTR9XAVTSjNiWqGv1s
+id: paragraph.field_accordion_flush
+field_name: field_accordion_flush
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

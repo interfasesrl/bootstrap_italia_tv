@@ -1,0 +1,20 @@
+uuid: b6ef51e1-fc88-4fef-a8d0-84ba02e0034e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: cfbM8ghkgDb9LbcbnCUIa_2p-J9oaGWa7qwWrTuV8WQ
+id: paragraph.field_full_width
+field_name: field_full_width
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

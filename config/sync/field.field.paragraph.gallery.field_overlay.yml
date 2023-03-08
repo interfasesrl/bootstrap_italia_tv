@@ -1,0 +1,25 @@
+uuid: 12bc451f-2636-47d9-995f-55d2c0952d44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_overlay
+    - paragraphs.paragraphs_type.gallery
+_core:
+  default_config_hash: Sbehh-mwO-zfQDL4dPWwQ2SH8AgaRwVxWFAsvXe8g2Y
+id: paragraph.gallery.field_overlay
+field_name: field_overlay
+entity_type: paragraph
+bundle: gallery
+label: 'Enable overlay'
+description: 'If checked enables the overlay on all items.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

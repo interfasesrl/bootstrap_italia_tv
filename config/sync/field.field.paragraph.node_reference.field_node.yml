@@ -1,0 +1,33 @@
+uuid: 68d31074-c6b3-4b58-8c05-84e167cd7829
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_node
+    - node.type.article
+    - node.type.page
+    - paragraphs.paragraphs_type.node_reference
+_core:
+  default_config_hash: Db_VtOrLt1aZL1Z1Si--C-T14A1eWvlXXQxGciH-7cQ
+id: paragraph.node_reference.field_node
+field_name: field_node
+entity_type: paragraph
+bundle: node_reference
+label: Node
+description: 'To manage types go to <a href="/admin/structure/paragraphs_type/node_reference/fields/paragraph.node_reference.field_node" title="Click to choose types">Structure -> Paragraphs types -> Node Reference -> Manage fields -> Edit Node Field</a>'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      page: page
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

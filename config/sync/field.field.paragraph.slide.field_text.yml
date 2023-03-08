@@ -1,0 +1,23 @@
+uuid: 56570f35-f55c-4a44-9a67-7e4e82951f91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.slide
+  module:
+    - text
+_core:
+  default_config_hash: vVVv4Tmp9ERbC2P6RzXCM3DG_J3bIQBoJ2s_o6KTQgk
+id: paragraph.slide.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: slide
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

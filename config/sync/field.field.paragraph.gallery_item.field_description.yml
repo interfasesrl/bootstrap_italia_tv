@@ -1,0 +1,21 @@
+uuid: 0bad3a0d-523f-43a4-8caf-83bc7369d920
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.gallery_item
+_core:
+  default_config_hash: i5vBcsI_dKUD1mlv8k2XI1IIKKcQ-EcI6xjuvVyPFeA
+id: paragraph.gallery_item.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: gallery_item
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

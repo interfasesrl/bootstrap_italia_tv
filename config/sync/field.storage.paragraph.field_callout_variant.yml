@@ -1,0 +1,41 @@
+uuid: b605f8a7-5b5b-489b-ba99-2b67083716a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: FWoab1PtrrdmjKQzqEyIFUMcoNIAG0hcQ2UuN6_wnZk
+id: paragraph.field_callout_variant
+field_name: field_callout_variant
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: default
+      label: Default
+    -
+      value: success
+      label: Success
+    -
+      value: warning
+      label: Warning
+    -
+      value: danger
+      label: Danger
+    -
+      value: important
+      label: Important
+    -
+      value: note
+      label: Note
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

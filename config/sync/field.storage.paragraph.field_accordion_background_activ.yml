@@ -1,0 +1,20 @@
+uuid: 0d1b0eca-6ce3-443a-ba1c-5f072a7167f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: YkeZ4i-MDDNfgXxIhxMTLd0oTroi2uQgpeDx1AADyiE
+id: paragraph.field_accordion_background_activ
+field_name: field_accordion_background_activ
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

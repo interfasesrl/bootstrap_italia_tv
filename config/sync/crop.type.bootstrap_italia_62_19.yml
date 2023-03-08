@@ -1,0 +1,14 @@
+uuid: d229d3f4-cd6a-47b2-ab23-94410f5ce72b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VSGAx8e6i6Y_Q6irHAO91pCA6eLepyHA4DJPBKFAaOQ
+id: bootstrap_italia_62_19
+label: 'Bootstrap Italia 62:19'
+description: 'Bootstrap Italia 62:19'
+aspect_ratio: '62:19'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

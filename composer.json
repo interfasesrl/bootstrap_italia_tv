@@ -17,10 +17,22 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/bootstrap_italia": "^2.2",
+        "drupal/color_field": "^3.0",
         "drupal/components": "^3.0@beta",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
+        "drupal/devel": "^5.0",
+        "drupal/ds": "^3.15",
+        "drupal/entity_reference_display": "^2.0",
+        "drupal/field_group": "^3.4",
+        "drupal/focal_point": "^2.0@alpha",
+        "drupal/imce": "^3.0",
+        "drupal/paragraphs": "^1.15",
+        "drupal/pathauto": "^1.11",
+        "drupal/ui_patterns": "^1.5",
+        "drupal/ui_patterns_settings": "^2.0@RC",
+        "drupal/webform": "^6.2@beta",
         "drush/drush": "11.5.*"
     },
     "conflict": {

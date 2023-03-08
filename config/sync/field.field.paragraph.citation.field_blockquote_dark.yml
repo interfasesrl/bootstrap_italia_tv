@@ -1,0 +1,25 @@
+uuid: 9ff44784-be16-484b-b365-d7359756e67b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_blockquote_dark
+    - paragraphs.paragraphs_type.citation
+_core:
+  default_config_hash: iRJjlKKcNVjFM7E0Zb0YJyF-H64WgSaQ1x_blpVZ6Mk
+id: paragraph.citation.field_blockquote_dark
+field_name: field_blockquote_dark
+entity_type: paragraph
+bundle: citation
+label: 'Card dark'
+description: 'Check to display <code>Card Dark</code> variant. <a href="https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tipografia/#card" title="Read the docs" target="_blank">Docs</a>'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
