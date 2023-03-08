@@ -1,0 +1,22 @@
+name: "Bootstrap Italia Paragraph Webform"
+description: This module manages the integration of webform with paragraph.
+package: "Bootstrap Italia"
+
+type: module
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:webform
+  - drupal:webform_bootstrap
+  - drupal:webform_ui
+  - drupal:bootstrap_italia_paragraph
+
+components:
+  namespaces:
+    # Components library 2.0
+    bi-bcl:
+      - ../../components/components-2
+
+# Information added by Drupal.org packaging script on 2023-03-06
+version: '2.2.2'
+project: 'bootstrap_italia'
+datestamp: 1678122347

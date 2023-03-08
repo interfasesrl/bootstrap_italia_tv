@@ -1,0 +1,36 @@
+# gitignore INTERFASE
+
+# settings 
+# Ignore configuration files that may contain sensitive information.
+web/sites/*/settings.php
+web/sites/*/settings.*.php
+web/sites/*/services.*.yml
+
+# Ignore paths that contain user-generated content.
+web/sites/*/files
+/private/
+
+# Ignore paths that may contain user-generated content
+web/sites/*/files
+web/sites/*/public
+
+# Ignore paths that may contain temporary files
+web/sites/*/translations
+web/sites/*/tmp
+web/sites/*/cache
+/tmp
+
+# config
+.env
+
+
+**/.DS_Store
+**/.vscode
+
+docker-compose.override.yml
+web/sites/default/services.yml
+web/cookie.txt
+
+
+#ignore bootstrap theme node modules
+web/themes/custom/*/node_modules/

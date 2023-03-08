@@ -1,0 +1,12 @@
+uuid: 85412de5-e089-4a8b-b403-2972e43e887c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Xv9k40Y2V1b1FbEMuVvz5rA9drmBAjZ4jhDoftmN6I4
+id: node.gallery
+label: Gallery
+targetEntityType: node
+cache: true

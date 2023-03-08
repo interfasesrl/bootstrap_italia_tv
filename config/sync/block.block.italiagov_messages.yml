@@ -1,0 +1,22 @@
+uuid: d6f78b86-6360-49d2-89ec-793220ee9296
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - italiagov
+_core:
+  default_config_hash: DueFTvqQInecu74L558Et1UprHdwIa74Voq0eRmW9ME
+id: italiagov_messages
+theme: italiagov
+region: notification
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

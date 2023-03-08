@@ -1,0 +1,22 @@
+uuid: 79ec43a2-5d31-4ec2-9bae-fbce07d3ff22
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - italiagov
+_core:
+  default_config_hash: DSlZeEG-19dI_6JUd4qUkLbEg9TNiMOzQYKMmbp0Z_8
+id: italiagov_breadcrumbs
+theme: italiagov
+region: breadcrumb
+weight: -8
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

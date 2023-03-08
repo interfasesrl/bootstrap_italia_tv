@@ -1,0 +1,20 @@
+name: Bootstrap Italia Paragraph Node Reference
+type: module
+description: 'This module, through a paragraph, refers to other nodes and allows you to choose the view with which they must be displayed.'
+package: "Bootstrap Italia"
+core_version_requirement: ^9 || ^10
+
+dependencies:
+  - drupal:entity_reference_display
+  - drupal:bootstrap_italia_paragraph
+
+components:
+  namespaces:
+    # Components library 2.0
+    bi-bcl:
+      - ../../components/components-2
+
+# Information added by Drupal.org packaging script on 2023-03-06
+version: '2.2.2'
+project: 'bootstrap_italia'
+datestamp: 1678122347

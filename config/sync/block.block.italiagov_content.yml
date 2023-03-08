@@ -1,0 +1,22 @@
+uuid: d23ef4c9-a722-4f34-9926-98a02c802986
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - italiagov
+_core:
+  default_config_hash: CAm8Xg4voitaOSc3BtcHQ8KFUn3f01slJ0kAFEeTw_U
+id: italiagov_content
+theme: italiagov
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

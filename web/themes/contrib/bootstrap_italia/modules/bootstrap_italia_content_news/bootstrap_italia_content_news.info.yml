@@ -1,0 +1,32 @@
+name: "Bootstrap Italia Content News"
+description: 'This module adds the "News" content type (second level content).'
+package: "Bootstrap Italia Example"
+
+type: module
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:focal_point
+  - drupal:responsive_image
+  - drupal:imce
+  - drupal:paragraphs
+  - drupal:field_group
+  - drupal:toc_js
+  - drupal:bootstrap_italia_paragraph
+  - drupal:bootstrap_italia_paragraph_accordion
+  - drupal:bootstrap_italia_paragraph_attachments
+  - drupal:bootstrap_italia_paragraph_callout
+  - drupal:bootstrap_italia_paragraph_carousel
+  - drupal:bootstrap_italia_paragraph_citation
+  - drupal:bootstrap_italia_paragraph_map
+  - drupal:bootstrap_italia_paragraph_webform
+
+components:
+  namespaces:
+    # Components library 2.0
+    bi-bcl:
+      - ../../components/components-2
+
+# Information added by Drupal.org packaging script on 2023-03-06
+version: '2.2.2'
+project: 'bootstrap_italia'
+datestamp: 1678122347

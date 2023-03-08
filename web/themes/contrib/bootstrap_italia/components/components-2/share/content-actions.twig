@@ -1,0 +1,75 @@
+{#
+/**
+ * @file
+ * Template for share-this component.
+ * Docs: https://italia.github.io/bootstrap-italia/docs/esempi/comuni/template-novita-notizia/
+ * Latest revision: v2.1.1
+ *
+ * Parameters:
+ * - subject (string) (default: 'Read this news'|t)
+ * - description (string) (default: subject)
+ * - tags (string) (default: '')
+ * - download_url (string) (default: '<current>')
+ * - read_element (string) (default '')
+ *
+ * Examples:
+   {% include '@bi-bcl/share/content-actions.html.twig' with {
+      subject: 'Subject',
+      description: 'Description'|t,
+      download_url: 'https://...'
+      read_element: 'class-elements-to-read'
+   } %}
+ */
+#}
+{% apply spaceless %}
+  {# Set defaults #}
+  {% set _subject = subject ? subject|url_encode : 'Read this news'|t|url_encode %}
+  {% set _description = description ? description|url_encode : _subject %}
+  {% set _tags = tags ? tags : 'News'|t %}
+  {% set _download_href = download_url ? download_url : url('<current>') %}
+  {% set _current_url = url('<current>')|render %}
+
+  {% set targets = {
+    'download': {
+      'enable': true,
+      'label': 'Download'|t,
+      'icon': 'it-download',
+      'description': 'Download'|t,
+      'targetType': '_self',
+      'targetUrl': _download_href,
+      'customAttributes': 'download'
+    },
+    'print': {
+      'enable': true,
+      'label': 'Print'|t,
+      'icon': 'it-print',
+      'description': 'Print'|t,
+      'targetType': '_self',
+      'targetUrl': 'javascript:if(window.print)window.print()'
+    },
+    'listen': {
+      'id': 'it-share-action-speak',
+      'enable': false,
+      'label': 'Listen'|t,
+      'icon': 'it-hearing',
+      'description': 'Listen'|t,
+      'targetUrl': '#',
+      'customAttributes': 'data-bi-read='~read_element
+    },
+    'mail': {
+      'enable': true,
+      'label': 'Email'|t,
+      'icon': 'it-mail',
+      'description': 'Email'|t,
+      'targetType': '_self',
+      'targetUrl': 'mailto:?Subject=' ~ _subject ~ '&Body=' ~ _description ~ '%20' ~ _current_url
+    }
+  } %}
+
+  {# Component #}
+  {% include '@bi-bcl/share/share.html.twig' with {
+    targets: targets,
+    label: 'View actions'|t,
+    icon: 'it-more-items',
+  } %}
+{% endapply %}

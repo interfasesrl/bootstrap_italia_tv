@@ -1,0 +1,122 @@
+/* Theme fix */
+.block-region.demo-block {
+  background-color: #aaa;
+  padding: 1em;
+  color: #000 !important;
+  font-weight: bold;
+}
+
+#toolbar-administration.toolbar {
+  height: auto;
+  max-width: fit-content;
+  z-index: 10001;
+}
+
+/* Navbar sticky VS drupal toolbar */
+.toolbar-horizontal.toolbar-tray-open .bs-it-sticky-wrapper .is-sticky {
+  top: 78px !important;
+}
+.toolbar-horizontal .bs-it-sticky-wrapper .is-sticky {
+  top: 39px !important;
+}
+.toolbar-oriented .toolbar-bar {
+  z-index: 10001;
+}
+
+/* Navbar sticky vs Layout Builder sidebar */
+.ui-dialog,
+.modal {
+  z-index: 20001 !important;
+}
+
+/* Fix link-list */
+.link-list-wrapper ul li a span {
+  line-height: inherit;
+}
+
+/* Fix footer active link */
+.it-footer-main .link-list-wrapper ul li a.active {
+  text-decoration: underline;
+}
+
+/* Fix modal search */
+.it-header-wrapper:not(.is-sticky) {
+  z-index: unset !important;
+}
+/* Fix timeline */
+.it-timeline-wrapper .it-pin-wrapper {
+  z-index: 2 !important;
+}
+/* Fix modals */
+.it-header-wrapper.is-sticky {
+  z-index: 10000 !important;
+}
+
+/* Typography Fix -------------------------------------------------------------------------- */
+em.placeholder {
+  background-color: unset;
+  opacity: .9;
+}
+
+/* Table Fix -------------------------------------------------------------------------- */
+a.tabledrag-handle .handle {
+  width: 24px;
+  height: 24px;
+  margin: 0 1em;
+}
+
+/* Webform fix ------------------------------------------------------------------------ */
+/* Scale component */
+.webform-scale-small input + label {
+  width: 26px;
+  height: 26px;
+  font-size: 0.7em;
+  line-height: 22px;
+}
+.webform-scale-medium input + label {
+  font-size: 0.9em;
+  line-height: 30px;
+}
+.webform-scale-large input + label {
+  font-size: 1.1em;
+  line-height: 40px;
+}
+.webform-scale-text {
+  margin-top: .25rem;
+  font-size: 0.777rem;
+}
+/* Select in webform date list component */
+.select-wrapper select {
+  padding: .375rem 2.25rem .375rem .75rem;
+}
+/* Select in draggable tables */
+fieldset.webform-composite-hidden-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Editor */
+.js-text-format-wrapper {
+  margin-bottom: 3em;
+}
+.js-text-format-wrapper .form-group {
+  margin-bottom: 0;
+}
+button.link-edit-summary {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+}
+.text-summary-wrapper {
+  margin-bottom: 2em;
+}
+
+/* Edit node -------------------------------------------------------------------------- */
+.node-form .image-widget,
+.node-form .image-widget img {
+  margin-bottom: 3em;
+}
+
+/* Overflow -_------------------------------------------------------------------------- */
+html {
+  overflow-x: hidden;
+}

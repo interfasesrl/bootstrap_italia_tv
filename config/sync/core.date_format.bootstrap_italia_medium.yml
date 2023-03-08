@@ -1,0 +1,13 @@
+uuid: 8e87ac67-cbc7-4b1f-96d7-5e1cbab0357a
+langcode: en
+status: true
+dependencies:
+  enforced:
+    theme:
+      - bootstrap_italia
+_core:
+  default_config_hash: RyEbeeE2VzGSYnTLpJKmjOwb3wMVBcPnBgUlsaIVabA
+id: bootstrap_italia_medium
+label: 'Bootstrap Italia medium'
+locked: false
+pattern: 'j F Y'

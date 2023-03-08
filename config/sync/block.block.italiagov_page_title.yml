@@ -1,0 +1,20 @@
+uuid: 064c1057-5290-4850-994f-07e63c332dae
+langcode: en
+status: true
+dependencies:
+  theme:
+    - italiagov
+_core:
+  default_config_hash: El0Dith66rEdG5NXyOonyNgyxc9Upgps2UCg_NsiBWk
+id: italiagov_page_title
+theme: italiagov
+region: title
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

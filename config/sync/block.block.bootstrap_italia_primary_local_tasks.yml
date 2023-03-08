@@ -1,0 +1,22 @@
+uuid: 95522562-6512-4109-a5fa-9e938903148d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrap_italia
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: bootstrap_italia_primary_local_tasks
+theme: bootstrap_italia
+region: disabled_blocks
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

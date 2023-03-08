@@ -1,0 +1,17 @@
+{% apply spaceless %}
+  {% set card_special_attribute = create_attribute() %}
+  {% set card_target_url = card_target_url['node_link']['0']['0']['#context']['entity_url'] ? card_target_url['node_link']['0']['0']['#context']['entity_url']|render : card_target_url|render|striptags|trim %}
+  {% set card_special_attribute = card_special_attribute.setAttribute('href', card_target_url) %}
+  {% embed '@bi-bcl/card/card.html.twig' with {
+    card_tag_container: 'a',
+    card_image: card_image,
+    card_title: card_title|render|striptags|trim,
+    card_attributes: card_special_attribute
+  } %}
+    {% block cardCategoryTop %}
+      <div class="head-tags">
+        <span class="data">{{ card_date }}</span>
+      </div>
+    {% endblock %}
+  {% endembed %}
+{% endapply %}
