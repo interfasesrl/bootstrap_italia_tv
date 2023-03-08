@@ -2,6 +2,7 @@ _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   automated_cron: 0
+  better_exposed_filters: 0
   big_pipe: 0
   block: 0
   block_content: 0
@@ -53,7 +54,10 @@ module:
   image: 0
   imce: 0
   jquery_ui: 0
+  jquery_ui_datepicker: 0
   jquery_ui_draggable: 0
+  jquery_ui_slider: 0
+  jquery_ui_touch_punch: 0
   layout_builder: 0
   layout_discovery: 0
   link: 0
@@ -83,6 +87,7 @@ module:
   ui_patterns_library: 0
   ui_patterns_settings: 0
   ui_patterns_views: 0
+  ui_patterns_views_style: 0
   user: 0
   views_ui: 0
   webform: 0

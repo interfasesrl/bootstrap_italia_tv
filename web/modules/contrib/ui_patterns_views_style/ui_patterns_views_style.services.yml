@@ -1,0 +1,5 @@
+services:
+  ui_patterns_views_style.updater:
+    class: Drupal\ui_patterns_views_style\Service\UiPatternsViewsStyleUpdater
+    arguments:
+      - '@config.factory'

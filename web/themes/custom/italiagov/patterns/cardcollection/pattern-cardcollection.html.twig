@@ -1,0 +1,41 @@
+
+{% set shadowclass = collection_shadow ? 'shadow-bk' : '' %}
+
+<div>
+
+  <h2>{{ collection_title }}</h2>
+
+  <h5>{{ collection_subtitle }}</h5>
+  
+  <div class="col-12 row {{ shadowclass }}">
+    
+    {% if variant == 'column_2' %}
+      {% for card in card_collection %}
+        <div class="col-12 col-sm-6">
+          {{ card }}
+        </div>
+      {% endfor %}
+
+    {% elseif variant == 'column_3' %}
+      {% for card in card_collection %}
+        <div class="col-12 col-sm-6 col-lg-4">
+          {{ card }}
+        </div>
+      {% endfor %}
+
+    {% elseif variant == 'column_4' %}
+      {% for card in card_collection %}
+        <div class="col-12 col-sm-6 col-lg-3">
+          {{ card }}
+        </div>
+      {% endfor %}
+
+    {% else %}
+      {% for card in card_collection %}
+        {{ card }}
+      {% endfor %}
+
+    {% endif %}
+
+  </div>
+</div>

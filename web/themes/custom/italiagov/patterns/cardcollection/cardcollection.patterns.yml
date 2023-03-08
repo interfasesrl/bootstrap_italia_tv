@@ -1,0 +1,59 @@
+# This is the unique pattern ID.
+#
+# It is possible to define multiple patterns in a YML file, each with it's own
+# unique ID. However, I personally think that it is more logical to have one
+# pattern per file to keep them well-separated and organized.
+#
+# You can however, group similar patterns in a file.
+# Example:
+#   - button
+#   - button_with_icon
+#
+cardcollection:
+  # The label and description are used in the Drupal UI and the pattern library.
+  label: "Card Collection"
+  description: "Collection of cards - bootstrap grid"
+
+  # Variants definition.
+  variants:
+    default:
+      label: Default
+      description: "Collection"
+    column_2:
+      label: 2 Columns
+      description: "2 columns layout"
+    column_3:
+      label: 3 Columns
+      description: "3 columns layout"
+    column_4:
+      label: 4 Columns
+      description: "4 columns layout"
+
+  # Settings (ui_patterns_settings module).
+  settings:
+    collection_shadow:
+      type: boolean
+      label: "Enable shadow"
+      description: "Shows collection container shadow"
+      allow_token: true
+      preview: 1
+      allow_expose: true
+
+  # Fields of data supported by the pattern.
+  # This can include optional fields which you can handle in your TWIG.
+  fields:
+    collection_title:
+      type: text
+      label: 'Collection Title'
+      description: 'Collection title'
+      preview: 'Titolo insieme di cards'
+    collection_subtitle:
+      type: text
+      label: 'Collection Subtitle'
+      description: 'Sottotitolo insieme di cards'
+      preview: 'Lorem ipsum dolor sit amet'
+    card_collection:
+      type: text
+      label: 'Cards collection'
+      description: 'Lista di cards che arrivano da una vista'
+      preview: '<div>Card</div><div>Card</div><div>Card</div><div>Card</div>'

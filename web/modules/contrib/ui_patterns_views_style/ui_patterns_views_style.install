@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Install and update functions for the ui_patterns_views_style module.
+ */
+
+declare(strict_types = 1);
+
+/**
+ * Update Pattern views style structure.
+ */
+function ui_patterns_views_style_update_9101() : void {
+  \Drupal::service('ui_patterns_views_style.updater')->update9101();
+}
