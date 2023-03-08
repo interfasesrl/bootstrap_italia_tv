@@ -7,7 +7,9 @@ includono tutte le dipendenze delle librerie di bootstrap e bootstrap_italia
 per installare da shell git:
 
 cd web/custom/italiagov
+
 npm install
+
 
 ## watch scss
 Durante sviluppo insieme a Docker, lanciare una shell git con
