@@ -52,13 +52,14 @@ serve comunque fare "drush cr" per vedere i cambiamenti
 # Errori in creazione del progetto
 
 
-## ERROR: "Site UUID in Source Storage does not match"
+## ERROR: "These entities need to be deleted before importing."
 Dopo aver creato il DB la prima volta, provando a fare un drush cim potrebbe uscire l'errore
 
 ```
-Drupal\Core\Config\ConfigImporterException: There were errors validating the config synchronization.
+"Drupal\Core\Config\ConfigImporterException: There were errors validating the config synchronization.
 [ ... ]
-Entities exist of type <em class="placeholder">Shortcut link</em> and <em class="placeholder"></em> <em class="placeholder">Default</em>. These entities need to be deleted before importing.
+Entities exist of type <em class="placeholder">Shortcut link</em> and <em class="placeholder"></em>
+<em class="placeholder">Default</em>. These entities need to be deleted before importing."
 ```
 
 Risolto andando in sul back in Configuration > User interface > Shortcuts (admin/config/user-interface/shortcut). Entrando in "List links" della lista di shortcut "Default" e cancellandoli tutti.
@@ -70,7 +71,7 @@ https://www.drupal.org/forum/support/post-installation/2015-12-20/problem-during
 Dropo un drush cim, potrebbe uscire l'errore
 
 ```
-Site UUID in source storage does not match the target storage.
+"Site UUID in source storage does not match the target storage."
 ```
 
 Risolto prendendo l'UUID dal DB originale del progetto creato con
@@ -84,3 +85,5 @@ e settando lo stesso UUID sul nuovo progetto clonato
 ```
 $ drush config:set system.site uuid <my_uuid> -y
 ```
+
+https://cornel.co/article/solve-missmatched-site-uuid-drupal
