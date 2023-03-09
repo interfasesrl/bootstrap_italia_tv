@@ -16,47 +16,47 @@ third_party_settings:
       children:
         - group_webform
         - group_settings
+      label: Container
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
         direction: horizontal
         width_breakpoint: 640
-      label: Container
     group_webform:
       children:
         - field_webform
+      label: Webform
+      region: content
       parent_name: group_container
       weight: 5
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: open
+        description: ''
         required_fields: true
-      label: Webform
     group_settings:
       children:
         - field_settings
+      label: Settings
+      region: content
       parent_name: group_container
       weight: 6
       format_type: tab
-      region: content
       format_settings:
+        classes: ''
         show_empty_fields: false
         id: ''
-        classes: ''
-        description: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Settings
 _core:
   default_config_hash: 8R49grg9kkEIYCGQ9D3HPa8l2YpX6LBUWuhYL1crr4o
 id: paragraph.webform.default
@@ -77,13 +77,13 @@ content:
       default_paragraph_type: settings
     third_party_settings: {  }
   field_webform:
+    type: webform_entity_reference_select
     weight: 1
+    region: content
     settings:
       default_data: true
       webforms: {  }
     third_party_settings: {  }
-    type: webform_entity_reference_select
-    region: content
 hidden:
   created: true
   status: true

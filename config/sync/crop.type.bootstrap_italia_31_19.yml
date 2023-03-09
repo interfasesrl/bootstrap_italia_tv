@@ -4,8 +4,8 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: iVUxNCPz4xrtpEcOHv8eQrK7lKaiMAmp_mK4NF6q00E
-id: bootstrap_italia_31_19
 label: 'Bootstrap Italia 31:19'
+id: bootstrap_italia_31_19
 description: 'Crop type 31:19.'
 aspect_ratio: '31:19'
 soft_limit_width: null

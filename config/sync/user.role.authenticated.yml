@@ -28,5 +28,5 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
-  - 'view media'
   - 'use text format webform_default'
+  - 'view media'
